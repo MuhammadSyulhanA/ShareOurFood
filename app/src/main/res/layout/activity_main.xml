@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/img">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="50dp">
+
+            <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/sof"
+                    android:layout_gravity="center"
+
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat Datang"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:padding="10dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk Untuk Melanjutkan"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+            />
+            <EditText
+                    android:id="@+id/username"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/usernameHint"
+                    android:textColorHint="#000"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_form"
+                    android:layout_gravity="center"
+            />
+
+            <EditText
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/passwordHint"
+                    android:textColorHint="#000"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_form"
+                    android:layout_gravity="center"
+
+            />
+            <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:text="Lupa Password?"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="right|center"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+
+
+            />
+            <Button
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LoginHInt"
+                    android:textStyle="bold"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+
+
+
+            />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
